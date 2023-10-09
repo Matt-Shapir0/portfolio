@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matt Shapiro</title>
+  <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" type="text/css" href="websiteStyle.css" media="screen and (min-width: 451px)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        emailjs.init('dAlsgnjjcI3909IsX');
+    })();
+  </script>
+  <script src="contact-form.js"></script>
+  
+
+</head>
+<body>
+    <header>
+      <img src="images/website-logo.png" class="head-logo">
+      <div class="head-spacer"></div>
+      <nav id="nav-bar">
+      <ul class="nav-bar">
+        <li class="nav-link">
+            <a class="a-link" href="#about-section">ABOUT ME</a>
+        </li>
+        <li class="nav-link">
+            <a class="a-link" href="#project-section">PROJECTS</a>
+        </li>
+        <li class="nav-link">
+            <a class="a-link" href="#contact-section">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="intro">
+          <div class="intro-left-half"> 
+            <p class="intro-text1">Developer & Musician</p>
+            <p class="intro-text2">Exploring ways to integrate technological innovation with creativity</p>
+            <div class="intro-buttons">
+                <a href="#about-section"><button class="intro-button1">GET TO KNOW ME</button></a>
+                <a href="#about-section"><button class="intro-button2"><img class="intro-down-arrow" src="images/down-arrow.png"></button></a>
+            </div>
+          </div>
+          <div class="intro-right-half">
+            <img id="profile-photo" src="images/profile-photo.png">
+        </div>
+        </section>
+
+        <section class="about-div" id="about-section">
+            <div class="about-left-half"></div>
+            <div class="about-right-half">
+              <p class="hey1">Hey there,</p>
+              <p class="hey2">I'm Matt Shapiro</p>
+              <div class="paragraph-border">
+                <p class="paragraph">I am a third-year computer science and music student at</p>
+                <p class="paragraph">Colgate University with a passion for learning and creating.</p>
+                <p class="paragraph">I specialize in Python, JavaScript, HTML, CSS, Java, and C. I</p> 
+                <p class="paragraph">am also an enthusiastic classical and jazz pianist and</p>
+                <p class="paragraph">percussionist with over 10 years of solo and ensemble</p> 
+                <p class="paragraph">performance experience.</p>
+              </div>
+
+              <p class="connect-with-me">Connect with me:</p>
+              <img id="squiggle" src="images/squiggle.png">
+
+              <div class="social-media">
+                <a href="https://www.linkedin.com/in/matthewshapiro25" target="_blank"><img class="red-social" src="images/linkedin.png"></a>
+                <a href="https://www.instagram.com/matt._shapiro/" target="_blank"><img class="red-social" src="images/insta.png"></a>
+                <a href="mailto:mattshapiro55@gmail.com" target="_blank"><img class="red-social" src="images/gmail.png"></a>
+              </div>
+            </div>
+        </section>
+
+        <section class="contact-div" id="contact-section">
+          <div class="contact-left">
+            <p class="contact-head">Send me a Message:</p>
+            <p class="copyright">© 2023 Matthew Shapiro.</p>
+          </div>
+          <div class="contact-right">
+            <form id="contact-form" class="js-form">
+              <div class="name">
+                <p id="name-input" class="label" type="text">Name</p>
+                <input name="name" class="short-box js-name" type="text">
+              </div>
+              <div class="email">
+                <p class="email-input label">Email</p>
+                <input name="email" class="short-box js-email" type="email" id="email-input">
+              </div>
+              <p class="label message-prompt">Your Message</p>
+              <textarea name="message" class="js-message" id="message-input"></textarea>
+
+              <p class="js-text form-warning"></p>
+
+              <button type="button" class="contact-button1 submits" onclick="submitForm()">SEND MESSAGE</button>
+              <button type="button" class="contact-button2 submits" onclick="submitForm()"><img class="intro-down-arrow" src="images/side-arrow.png"></button>
+            </form>
+            <img src="images/website-logo.png" class="end-logo">
+            
+          </div>
+        </section>
+    </main>
+
+</body>
+</html>
