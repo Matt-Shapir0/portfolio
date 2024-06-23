@@ -1,7 +1,7 @@
 :root{
   --logo-red: #950740;
   --blue-text: #253439;
-  --intro-button: #beefff;
+  --intro-button: #c1e8ff;
   --contact-form: #41616b;
   --ligher-blue: #51707a;
   --contect-button: #F6F4F1;
@@ -216,19 +216,15 @@ nav{
   padding: 1px;
 }
 
-.intro-button1{
-  color: var(--logo-red);
+.intro-button1, .intro-button2{
   border: none;
   background-color: var(--intro-button);
   padding: 1em;
   border-radius: 20px;
 }
 
-.intro-button2{
-  border: none;
-  background-color: var(--intro-button);
-  padding: 1em;
-  border-radius: 20px;
+.intro-button1{
+  color: var(--logo-red);
 }
 
 .intro-down-arrow{
@@ -238,7 +234,7 @@ nav{
 
 #profile-photo{
   /* border: solid; */
-  height: 500px;
+  height: 450px;
   /* margin-top: -100px;
   margin-left: 250px;
   margin-top: -15vh;
@@ -246,7 +242,7 @@ nav{
   z-index: 0;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 15%;
+  margin-left: 5%;
   /* margin-left: 30%;
   position: absolute;
   left: 68vw; */

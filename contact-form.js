@@ -7,6 +7,16 @@ function submitForm(){
   let email = document.querySelector('.js-email').value;
   let message = document.querySelector('.js-message').value;
 
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  
+
   // Display message if any form data is missing
   if (name===''){
     paragraphText = ' Please enter a name before submitting. '
@@ -18,6 +28,10 @@ function submitForm(){
   }
   else if (message===''){
     paragraphText = ' Please enter a message before submitting. '
+    document.querySelector('.js-text').innerText = paragraphText;
+  }
+  else if (validateEmail(email) === null){
+    paragraphText = ' Please enter a valid email address.'
     document.querySelector('.js-text').innerText = paragraphText;
   }
   else{
@@ -41,5 +55,5 @@ function submitForm(){
   document.querySelector('.js-text').innerText = '';
 }, 6000);
 
-  console.log('Message sucessfully submitted');
+  // console.log('Message sucessfully submitted');
 }
